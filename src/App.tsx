@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence, useAnimate } from 'framer-motion';
 import { Terminal, Sparkles, X } from 'lucide-react';
 
