@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from 'react';
-import { motion, AnimatePresence, useAnimate } from 'framer-motion';
+import { useState, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Terminal, Sparkles, X } from 'lucide-react';
 
 function App() {
@@ -11,7 +11,6 @@ function App() {
   });
   const [showCompletion, setShowCompletion] = useState(false);
   const [hasSeenPopup, setHasSeenPopup] = useState(false);
-  const [scope, animate] = useAnimate();
 
   useEffect(() => {
     // Set the end date to March 23, 2025 at 1 PM IST (7:30 UTC)
@@ -55,7 +54,6 @@ function App() {
 
   return (
     <motion.div 
-      ref={scope}
       className="min-h-screen bg-black text-white overflow-hidden relative scanlines"
     >
       {/* Background elements */}
